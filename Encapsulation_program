@@ -1,0 +1,43 @@
+//Encapsulation
+#include <iostream>
+using namespace std;
+class Student {
+    //private data members
+    private:
+    string studentname;
+    int studentRollno;
+    int studentAge;
+    //get method for student name to access
+    //private variable studentname
+    public:
+      string getstudentname(){
+        return studentname;
+      }
+    // set method for student name to set
+    void setstudentname(string studentname){
+      this-> studentname = studentname;
+    }
+    int getstudentRollno(){
+        return studentRollno;
+    }
+    void setstudentRollno(int studentRollno){
+        this-> studentRollno = studentRollno;
+    }
+    int getstudentAge(){
+        return studentAge;
+    }
+    void setstudentAge(int studentAge){
+        this-> studentAge = studentAge;
+    }
+};
+int main(){
+    Student obj;
+    //setting the values of the variables
+    obj.setstudentname("Mannat");
+    obj.setstudentRollno(70933);
+    obj.setstudentAge(18);
+    //printing the values of the variables
+    cout << "Student Name:" << obj.getstudentname() << endl;
+    cout << "Student Roll no:" << obj.getstudentRollno() << endl;
+    cout << "Student Age:" << obj.getstudentAge() << endl;
+}
